@@ -1,0 +1,22 @@
+<div class="center hero-unit">
+    <h1>Welcome to the Urban Cycling Guide</h1>
+	<% if user_signed_in? %>
+		<h2>You're signed in!<h2>
+		<div class="">
+			Select City
+			<select name="city">
+			  <option value="toronto">Toronto</option>
+			  <option value="new york">New York</option>
+			  <option value="san francisco">San Francisco</option>
+			</select>
+			<button>Go</>
+			<%= link_to "Go", city_selected_path, class: "btn btn-large btn-primary" %>
+		</div>
+	<% else %>
+	    <h2>
+	      Please sign in.
+	    </h2>
+	    <%= link_to "Sign up now!", new_user_registration_path, 
+			                class: "btn btn-large btn-primary" %>
+	<% end %>
+</div>

@@ -1,0 +1,11 @@
+one:
+  address: MyString
+  latitude: 1.5
+  longitude: 1.5
+  city: MyString
+
+two:
+  address: MyString
+  latitude: 1.5
+  longitude: 1.5
+  city: MyString
